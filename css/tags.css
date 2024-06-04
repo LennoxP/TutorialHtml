@@ -1,0 +1,15 @@
+.tag {
+    color: #00607c;
+}
+
+.attribute {
+    color: #f9361d;
+}
+
+.value {
+    color: #32CD32;
+}
+
+.comment {
+    color: gray;
+}

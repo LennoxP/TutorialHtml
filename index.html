@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aprenda sobre a história da Internet e como o HTML se tornou a espinha dorsal da criação de sites. Explore as principais tags HTML e suas funções."
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tutorial HTML - Parte 1</title>
+  </head>
+  <body>
+    <script>
+      function toggleDarkMode() {
+          document.body.classList.toggle('dark-mode');
+      }
+      </script>
+      
+    <button class="button" onclick="toggleDarkMode()">White&nbsp;&nbsp;Dark</button>
+    <header>
+      <div class="menu">
+        <ul class="list">
+          <h1 class="marca">Tutoriais.com</h1>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="segundobody">
+      <div class="texto1">
+      <h1 class="principal">Descobrindo Como Funciona a Internet: A Magia do HTML</h1>
+      </div>
+      <div class="sumario">
+      <h3 id="indice">Índice:</h2>
+      <ul class="listaindice">
+        <li><a href="#tudo-comecou">Como Tudo Começou com Tim Berners-Lee</a></li>
+        <li><a href="#entendendo-html">Entendendo o HTML</a></li>
+        <li><a href="#papel-html">O Papel do HTML na Web</a></li>
+        <li><a href="#o-que-sao-tags">O que são Tags?</a></li>
+        <li><a href="#principais-tags">Principais Tags</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+      </div>
+      </ul>
+      <hr class="linha">
+      <h2 id="tudo-comecou">Como Tudo Começou com Tim Berners-Lee</h2>
+      <div class="container">
+        <div class="imgcap">
+        <img class="tim" src="img/tim_berners.jpg" alt="tim_berners" width="280px" height="300px">
+        <figcaption class="timinfo">Tim Berners-Lee criador da World Wide Web</figcaption>
+        </div>
+        <p>
+          Tim Berners-Lee é uma figura central na história da internet. Nos anos
+          1980, trabalhando no CERN, o maior laboratório de física de partículas do
+          mundo, ele se deparou com um problema significativo: como facilitar o
+          compartilhamento de informações entre diferentes sistemas computacionais
+          usados pelos cientistas. Para resolver isso, Berners-Lee propôs um sistema
+          de informação global, que mais tarde se tornaria a World Wide Web. A ideia
+          era criar uma rede em que documentos e recursos pudessem ser acessados de
+          qualquer parte do mundo através de hiperlinks.
+        </p>
+        <p>
+          Em 1989, Berners-Lee escreveu o primeiro projeto para a "web". Este
+          projeto detalhava um método de acesso a documentos através da internet
+          usando hiperlinks. O primeiro website foi lançado em 1991, e estava
+          hospedado em um computador NeXT no CERN. Este site, que ainda está online,
+          servia para informar as pessoas sobre o que era a World Wide Web, como
+          criar seus próprios websites e como procurar por informações. Foi um
+          marco, pois pela primeira vez, informações podiam ser facilmente acessadas
+          e compartilhadas através de redes.
+        </p>
+        <p>
+          A contribuição de Berners-Lee não se limitou a inventar a Web, mas também
+          em assegurar que sua invenção fosse um recurso aberto e livre. Em 1993, o
+          CERN liberou o código-fonte da Web, garantindo que qualquer pessoa pudesse
+          usar e modificar a tecnologia sem pagar royalties. Isso foi fundamental
+          para que a internet se expandisse rapidamente pelo mundo, transformando-se
+          na ferramenta essencial que é hoje.
+        </p>
+    </div>
+      <hr class="linha">
+      <div class="container">
+      <h2 id="entendendo-html">Entendendo o HTML</h2>
+      <p>
+        HTML, que significa Linguagem de Marcação de Hipertexto, é o código usado
+        para estruturar e apresentar conteúdo na internet. Cada página web que
+        visitamos é, em sua essência, um documento HTML. Esta linguagem utiliza
+        'tags' para marcar diferentes partes do conteúdo, como texto, imagens e
+        links, indicando como eles devem ser exibidos no navegador. As tags HTML
+        dizem ao navegador como renderizar o conteúdo, desde o tamanho e estilo da
+        fonte até a organização de elementos em uma página.
+      </p>
+      <p>
+        O HTML é bastante flexível, permitindo aos desenvolvedores criar conteúdos
+        complexos e interativos. Ele pode ser combinado com CSS (Cascading Style
+        Sheets) para controle de estilo e com JavaScript para funcionalidades
+        dinâmicas. Juntos, esses três pilares da tecnologia web permitem a criação
+        desde simples páginas de texto até aplicações web completas e jogos. O
+        HTML5, a última versão, inclui suporte aprimorado para mídia (audio e
+        vídeo), gráficos e animações, e é considerado o padrão de fato para a
+        criação de websites e aplicativos.
+      </p>
+      <p>
+        Ao aprender HTML, começa-se usualmente com os elementos básicos como
+        títulos, parágrafos e links. Com o tempo, desenvolvedores podem explorar
+        funcionalidades mais avançadas, como formulários para coleta de dados,
+        integração com APIs, e a criação de layouts complexos com CSS. O HTML é,
+        portanto, a base sobre a qual se constrói a experiência do usuário na web,
+        tornando-se uma habilidade essencial para qualquer pessoa que deseje
+        trabalhar com tecnologia ou design web.
+      </p>
+      <small><a class=voltar href="#indice">Voltar</a></small>
+      </div>
+      <hr class="linha">
+      <div class="container">
+      <h2 id="papel-html">O Papel do HTML na Web</h2>
+      <p>
+        O HTML é fundamental para a internet como a conhecemos. Ele fornece a
+        estrutura básica de todas as páginas da web, organizando o conteúdo e
+        tornando-o acessível através de navegadores. Sem HTML, não haveria uma
+        forma padronizada de desenvolver e visualizar o conteúdo na web, o que
+        poderia levar a uma grande inconsistência entre os diferentes navegadores
+        e dispositivos. O HTML assegura que, independentemente do dispositivo ou
+        navegador usado, o conteúdo possa ser interpretado e exibido de forma
+        coerente.
+      </p>
+      <p>
+        Além de sua função estrutural, o HTML também desempenha um papel crucial
+        na acessibilidade. Através do uso de tags semânticas — como
+        &lt;header&gt;, &lt;footer&gt;, &lt;article&gt; e &lt;section&gt; — o HTML
+        permite que leitores de tela e outras tecnologias assistivas interpretem o
+        conteúdo das páginas, melhorando a experiência de usuários com diferentes
+        necessidades. Essas tags ajudam a descrever a natureza do conteúdo, o que
+        é benéfico não apenas para acessibilidade, mas também para SEO (Search
+        Engine Optimization), melhorando o ranqueamento do site em motores de
+        busca.
+      </p>
+      <p>
+        A evolução do HTML ao longo dos anos reflete as mudanças na forma como
+        acessamos e interagimos com a web. Desde suas versões iniciais, que
+        suportavam apenas textos simples e links, até o HTML5, que incorpora
+        suporte a elementos interativos e multimídia, o desenvolvimento do HTML
+        continua a impulsionar inovações na web. Isso mostra como o HTML não é
+        apenas um componente estático, mas uma parte viva e evolutiva da
+        tecnologia da informação.
+      </p>
+      <small><a class=voltar href="#indice">Voltar</a></small>
+    </div>
+      <hr class="linha">
+      <div class="container">
+      <h2 id="o-que-sao-tags">O que são Tags?</h2>
+      <p>
+        Tags são os blocos de construção do HTML, usadas para definir e organizar
+        o conteúdo em uma página web. Cada tag é envolvida por colchetes angulares
+        e geralmente vem em pares: uma tag de abertura e uma de fechamento, com o
+        conteúdo entre elas. Por exemplo, &lt;p&gt; é a tag de abertura para um
+        parágrafo, e &lt;/p&gt; é a tag de fechamento. Algumas tags, como
+        &lt;img&gt; para imagens e &lt;br /&gt; para quebra de linha, não precisam
+        de uma tag de fechamento porque não envolvem conteúdo direto.
+      </p>
+      <p>
+        As tags são fundamentais para dar instruções ao navegador sobre como
+        apresentar o conteúdo aos usuários. Elas podem especificar tudo, desde a
+        estrutura básica de uma página com tags como &lt;html&gt;, &lt;head&gt;, e
+        &lt;body&gt;, até detalhes mais específicos como &lt;strong&gt; para texto
+        em negrito e &lt;a&gt; para links. Além disso, as tags podem incluir
+        atributos que fornecem mais informações sobre como um elemento deve se
+        comportar ou aparecer. Por exemplo, a tag &lt;img&gt; inclui atributos
+        como src, que especifica o URL da imagem, e alt, que fornece texto
+        alternativo caso a imagem não possa ser exibida.
+      </p>
+      <p>
+        Além de organizar visualmente o conteúdo, as tags HTML também têm uma
+        função semântica importante. Elas ajudam a descrever a natureza do
+        conteúdo para os navegadores e para os motores de busca. Isso é
+        especialmente importante para SEO, pois tags como &lt;title&gt; e
+        &lt;meta>&gt;desempenham um papel crucial na forma como os motores de
+        busca indexam e entendem uma página. Conhecer e usar corretamente as tags
+        HTML é essencial para qualquer pessoa que desenvolva conteúdo para a web,
+        garantindo que o conteúdo não só pareça bom mas também seja funcional e
+        acessível.
+      </p>
+      </div>
+      <small><a class=voltar href="#indice">Voltar</a></small>
+      <hr class="linha">
+      <h1 id="principais-tags">Principais Tags:</h1>
+        <h3 class="subtitulos">Estrutura Básica</h3>
+      
+        <ol class="lista1">
+          <li>&lt;<span class="tag">!DOCTYPE</span>&gt; - Declara o tipo de documento e a versão do HTML.</li>
+          <li>&lt;<span class="tag">html</span>&gt; - Define o início de um documento HTML.</li>
+          <li>&lt;<span class="tag">head</span>&gt; - Contém metadados e links para scripts e folhas de estilo.</li>
+          <li>&lt;<span class="tag">body</span>&gt; - Define o corpo principal da página, onde todo o conteúdo visível é colocado.</li>
+      </ol>
+      
+      <pre class="caixa">
+          <code>
+              &lt;<span class="tag">!DOCTYPE html</span>&gt;
+              &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+              &lt;<span class="tag">head</span>&gt;
+              &lt;/<span class="tag">head</span>&gt;
+              &lt;<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">html</span>&gt;
+          </code>
+      </pre>
+      
+      <h3 class="subtitulos">Metadados</h3>
+      <ol class="lista1">
+          <li>&lt;<span class="tag">title</span>&gt; - Define o título da página.</li>
+          <li>&lt;<span class="tag">meta</span>&gt; - Define metadados sobre o documento que não são representados por outros elementos HTML.</li>
+          <li>&lt;<span class="tag">link</span>&gt; - Usado para linkar folhas de estilo CSS e outros recursos.</li>
+          <li>&lt;<span class="tag">style</span>&gt; - Define estilos CSS diretamente no documento.</li>
+          <li>&lt;<span class="tag">script</span>&gt; - Coloca ou refere a scripts JavaScript.</li>
+      </ol>
+      
+      <pre class="caixa">
+          <code>
+              &lt;<span class="tag">!DOCTYPE html</span>&gt;
+              &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+              &lt;<span class="tag">head</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+              &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+              &lt;<span class="tag">style</span>&gt;
+                  h1 {
+                      color: #000000;
+                  }
+              &lt;/<span class="tag">style</span>&gt;
+              &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+              &lt;/<span class="tag">head</span>&gt;
+              &lt;<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">html</span>&gt;
+          </code>
+      </pre>
+      
+      <h3 class="subtitulos">Seções de Conteúdo</h3>
+      <ol class="lista1">
+          <li>&lt;<span class="tag">header</span>&gt; - Define o cabeçalho de uma página ou seção.</li>
+          <li>&lt;<span class="tag">footer</span>&gt; - Define o rodapé de uma página ou seção.</li>
+          <li>&lt;<span class="tag">main</span>&gt; - Especifica o conteúdo principal de um documento.</li>
+          <li>&lt;<span class="tag">article</span>&gt; - Define um artigo independente ou autossuficiente.</li>
+          <li>&lt;<span class="tag">section</span>&gt; - Define uma seção de conteúdo tematicamente distinta.</li>
+          <li>&lt;<span class="tag">nav</span>&gt; - Define a navegação do site.</li>
+          <li>&lt;<span class="tag">aside</span>&gt; - Define conteúdo à parte do conteúdo principal, como barras laterais.</li>
+      </ol>
+      
+      <pre class="caixa">
+          <code>
+              &lt;<span class="tag">!DOCTYPE html</span>&gt;
+              &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+              &lt;<span class="tag">head</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+              &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+              &lt;<span class="tag">style</span>&gt;
+                  h1 {
+                      color: #000000;
+                  }
+              &lt;/<span class="tag">style</span>&gt;
+              &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+              &lt;/<span class="tag">head</span>&gt;
+              &lt;<span class="tag">body</span>&gt;
+                  &lt;<span class="tag">header</span>&gt;
+                      &lt;<span class="tag">nav</span>&gt;
+                      &lt;/<span class="tag">nav</span>&gt;
+                  &lt;/<span class="tag">header</span>&gt;
+                  &lt;<span class="tag">main</span>&gt;
+                      &lt;<span class="tag">section</span>&gt;
+                      &lt;/<span class="tag">section</span>&gt;
+                      &lt;<span class="tag">article</span>&gt;
+                          &lt;<span class="tag">aside</span>&gt;
+                          &lt;/<span class="tag">aside</span>&gt;
+                      &lt;/<span class="tag">article</span>&gt;
+                  &lt;/<span class="tag">main</span>&gt;
+                  &lt;<span class="tag">footer</span>&gt;
+                  &lt;/<span class="tag">footer</span>&gt;
+              &lt;/<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">html</span>&gt;
+          </code>
+      </pre>
+      
+      <h3 class="subtitulos">Agrupamento de Conteúdo</h3>
+      <ol class="lista1">
+          <li>&lt;<span class="tag">div</span>&gt; - Usado para divisões ou seções gerais.</li>
+          <li>&lt;<span class="tag">span</span>&gt; - Usado para agrupar elementos em linha.</li>
+          <li>&lt;<span class="tag">figure</span>&gt; - Usado para incorporar ilustrações, diagramas, fotos, código, etc.</li>
+          <li>&lt;<span class="tag">figcaption</span>&gt; - Define a legenda de uma &lt;<span class="tag">figure</span>&gt;.</li>
+      </ol>
+      
+      <pre class="caixa">
+          <code>
+              &lt;<span class="tag">!DOCTYPE html</span>&gt;
+              &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+              &lt;<span class="tag">head</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+              &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+              &lt;<span class="tag">style</span>&gt;
+                  h1 {
+                      color: #000000;
+                  }
+              &lt;/<span class="tag">style</span>&gt;
+              &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+              &lt;/<span class="tag">head</span>&gt;
+              &lt;<span class="tag">body</span>&gt;
+                  &lt;<span class="tag">div</span>&gt;
+                      &lt;<span class="tag">span</span>&gt;Texto em linha&lt;/<span class="tag">span</span>&gt;
+                  &lt;/<span class="tag">div</span>&gt;
+                  &lt;<span class="tag">figure</span>&gt;
+                      &lt;<span class="tag">img</span> <span class="attribute">src="imagem.jpg" alt="Descrição da Imagem"</span>&gt;
+                      &lt;<span class="tag">figcaption</span>&gt;Legenda da imagem&lt;/<span class="tag">figcaption</span>&gt;
+                  &lt;/<span class="tag">figure</span>&gt;
+                  &lt;<span class="tag">header</span>&gt;
+                      &lt;<span class="tag">nav</span>&gt;
+                      &lt;/<span class="tag">nav</span>&gt;
+                  &lt;/<span class="tag">header</span>&gt;
+                  &lt;<span class="tag">main</span>&gt;
+                      &lt;<span class="tag">section</span>&gt;
+                      &lt;/<span class="tag">section</span>&gt;
+                      &lt;<span class="tag">article</span>&gt;
+                          &lt;<span class="tag">aside</span>&gt;
+                          &lt;/<span class="tag">aside</span>&gt;
+                      &lt;/<span class="tag">article</span>&gt;
+                  &lt;/<span class="tag">main</span>&gt;
+                  &lt;<span class="tag">footer</span>&gt;
+                  &lt;/<span class="tag">footer</span>&gt;
+              &lt;/<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">html</span>&gt;
+          </code>
+      </pre>
+      
+      <h3 class="subtitulos">Conteúdo Embutido</h3>
+      <ol class="lista1">
+          <li>&lt;<span class="tag">img</span>&gt; - Usado para incorporar imagens.</li>
+          <li>&lt;<span class="tag">audio</span>&gt; - Usado para incorporar conteúdo de áudio.</li>
+          <li>&lt;<span class="tag">video</span>&gt; - Usado para incorporar conteúdo de vídeo.</li>
+          <li>&lt;<span class="tag">embed</span>&gt; - Usado para incorporar conteúdo externo interativo ou multimedia.</li>
+          <li>&lt;<span class="tag">object</span>&gt; - Usado para incorporar um objeto externo, como uma imagem, vídeo, plugin ou um recurso HTML.</li>
+          <li>&lt;<span class="tag">iframe</span>&gt; - Usado para incorporar outra página HTML dentro da atual.</li>
+      </ol>
+      
+      <pre class="caixa">
+          <code>
+              &lt;<span class="tag">!DOCTYPE html</span>&gt;
+              &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+              &lt;<span class="tag">head</span>&gt;
+              &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+              &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+              &lt;<span class="tag">style</span>&gt;
+                  h1 {
+                      color: #000000;
+                  }
+              &lt;/<span class="tag">style</span>&gt;
+              &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+              &lt;/<span class="tag">head</span>&gt;
+              &lt;<span class="tag">body</span>&gt;
+                  &lt;<span class="tag">div</span>&gt;
+                      &lt;<span class="tag">span</span>&gt;Texto em linha&lt;/<span class="tag">span</span>&gt;
+                  &lt;/<span class="tag">div</span>&gt;
+                  &lt;<span class="tag">figure</span>&gt;
+                      &lt;<span class="tag">img</span> <span class="attribute">src="imagem.jpg" alt="Descrição da Imagem"</span>&gt;
+                      &lt;<span class="tag">figcaption</span>&gt;Legenda da imagem&lt;/<span class="tag">figcaption</span>&gt;
+                  &lt;/<span class="tag">figure</span>&gt;
+                  &lt;<span class="tag">header</span>&gt;
+                      &lt;<span class="tag">nav</span>&gt;
+                      &lt;/<span class="tag">nav</span>&gt;
+                  &lt;/<span class="tag">header</span>&gt;
+                  &lt;<span class="tag">main</span>&gt;
+                      &lt;<span class="tag">section</span>&gt;
+                      &lt;/<span class="tag">section</span>&gt;
+                      &lt;<span class="tag">article</span>&gt;
+                          &lt;<span class="tag">aside</span>&gt;
+                          &lt;/<span class="tag">aside</span>&gt;
+                      &lt;/<span class="tag">article</span>&gt;
+                  &lt;/<span class="tag">main</span>&gt;
+                  &lt;<span class="tag">audio</span> <span class="attribute">controls</span>&gt;
+                      &lt;<span class="tag">source</span> <span class="attribute">src="audio.mp3" type="audio/mpeg"</span>&gt;
+                      Seu navegador não suporta o elemento de áudio.
+                  &lt;/<span class="tag">audio</span>&gt;
+                  &lt;<span class="tag">video</span> <span class="attribute">controls</span>&gt;
+                      &lt;<span class="tag">source</span> <span class="attribute">src="video.mp4" type="video/mp4"</span>&gt;
+                      Seu navegador não suporta o elemento de vídeo.
+                  &lt;/<span class="tag">video</span>&gt;
+                  &lt;<span class="tag">embed</span> <span class="attribute">src="arquivo.swf"</span>&gt;
+                  &lt;<span class="tag">iframe</span> <span class="attribute">src="pagina.html"</span>&gt;&lt;/<span class="tag">iframe</span>&gt;
+                  &lt;<span class="tag">footer</span>&gt;
+                  &lt;/<span class="tag">footer</span>&gt;
+              &lt;/<span class="tag">body</span>&gt;
+              &lt;/<span class="tag">html</span>&gt;
+          </code>
+      </pre>
+      
+      <h3 class="subtitulos">Formulários e Entradas</h3>
+<ol class="lista1">
+  <li>&lt;<span class="tag">form</span>&gt; - Define um formulário para entrada do usuário.</li>
+  <li>&lt;<span class="tag">input</span>&gt; - Define um campo de entrada.</li>
+  <li>&lt;<span class="tag">textarea</span>&gt; - Define uma área de texto.</li>
+  <li>&lt;<span class="tag">button</span>&gt; - Define um botão.</li>
+  <li>&lt;<span class="tag">select</span>&gt; - Define uma lista suspensa.</li>
+  <li>&lt;<span class="tag">option</span>&gt; - Define as opções dentro de uma lista suspensa.</li>
+  <li>&lt;<span class="tag">label</span>&gt; - Define um rótulo para um elemento &lt;<span class="tag">input</span>&gt;.</li>
+</ol>
+<pre class="caixa">
+  <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+    &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+    &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+    &lt;<span class="tag">style</span>&gt;
+      h1 {
+        color: #000000;
+      }
+    &lt;/<span class="tag">style</span>&gt;
+    &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+    &lt;/<span class="tag">head</span>&gt;
+    &lt;<span class="tag">body</span>&gt;
+      &lt;<span class="tag">div</span> <span class="attribute">class="segundobody"</span>&gt;
+        &lt;<span class="tag">header</span>&gt;
+          &lt;<span class="tag">h1</span>&gt;Olá &lt;<span class="tag">span</span>&gt;Mundo!&lt;/<span class="tag">span</span>&gt;&lt;/<span class="tag">h1</span>&gt;
+          &lt;<span class="tag">nav</span>&gt;
+          &lt;/<span class="tag">nav</span>&gt;
+        &lt;/<span class="tag">header</span>&gt;
+        &lt;<span class="tag">main</span>&gt;
+          &lt;<span class="tag">section</span>&gt;
+            &lt;<span class="tag">h2</span>&gt;Formulários e Entradas&lt;/<span class="tag">h2</span>&gt;
+            &lt;<span class="tag">form</span>&gt;
+              &lt;<span class="tag">label</span> <span class="attribute">for="nome"</span>&gt;Nome:&lt;/<span class="tag">label</span>&gt;
+              &lt;<span class="tag">input</span> <span class="attribute">type="text" id="nome" name="nome"</span>&gt;
+              &lt;<span class="tag">br</span>&gt;
+              &lt;<span class="tag">label</span> <span class="attribute">for="mensagem"</span>&gt;Mensagem:&lt;/<span class="tag">label</span>&gt;
+              &lt;<span class="tag">textarea</span> <span class="attribute">id="mensagem" name="mensagem"</span>&gt;&lt;/<span class="tag">textarea</span>&gt;
+              &lt;<span class="tag">br</span>&gt;
+              &lt;<span class="tag">button</span> <span class="attribute">type="submit"</span>&gt;Enviar&lt;/<span class="tag">button</span>&gt;
+              &lt;<span class="tag">br</span>&gt;
+              &lt;<span class="tag">label</span> <span class="attribute">for="opcoes"</span>&gt;Escolha uma opção:&lt;/<span class="tag">label</span>&gt;
+              &lt;<span class="tag">select</span> <span class="attribute">id="opcoes" name="opcoes"</span>&gt;
+                &lt;<span class="tag">option</span> <span class="attribute">value="opcao1"</span>&gt;Opção 1&lt;/<span class="tag">option</span>&gt;
+                &lt;<span class="tag">option</span> <span class="attribute">value="opcao2"</span>&gt;Opção 2&lt;/<span class="tag">option</span>&gt;
+              &lt;/<span class="tag">select</span>&gt;
+            &lt;/<span class="tag">form</span>&gt;
+          &lt;/<span class="tag">section</span>&gt;
+          &lt;<span class="tag">article</span>&gt;
+            &lt;<span class="tag">aside</span>&gt;
+            &lt;/<span class="tag">aside</span>&gt;
+          &lt;/<span class="tag">article</span>&gt;
+        &lt;/<span class="tag">main</span>&gt;
+        &lt;<span class="tag">footer</span>&gt;
+        &lt;/<span class="tag">footer</span>&gt;
+      &lt;/<span class="tag">div</span>&gt;
+    &lt;/<span class="tag">body</span>&gt;
+    &lt;/<span class="tag">html</span>&gt;
+  </code>
+</pre>
+<h3 class="subtitulos">Outros</h3>
+<ol class="lista1">
+  <li>&lt;<span class="tag">details</span>&gt; - Define detalhes adicionais que o usuário pode abrir e fechar.</li>
+  <li>&lt;<span class="tag">summary</span>&gt; - Define um cabeçalho visível para um elemento &lt;<span class="tag">details</span>&gt;.</li>
+  <li>&lt;<span class="tag">br</span>&gt; - Insere uma quebra de linha.</li>
+</ol>  
+<pre class="caixa">
+  <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;<span class="tag">html</span> <span class="attribute">lang="pt-BR"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">name="viewport" content="width=device-width, initial-scale=1.0"</span>&gt;
+    &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">charset="UTF-8"</span>&gt;
+    &lt;<span class="tag">link</span> <span class="attribute">rel="stylesheet" href="css/style.css"</span>&gt;
+    &lt;<span class="tag">style</span>&gt;
+      h1 {
+        color: #000000;
+      }
+    &lt;/<span class="tag">style</span>&gt;
+    &lt;<span class="tag">script</span>&gt;alert("Olá")&lt;/<span class="tag">script</span>&gt;
+    &lt;/<span class="tag">head</span>&gt;
+    &lt;<span class="tag">body</span>&gt;
+    &lt;<span class="tag">div</span> <span class="attribute">class="segundobody"</span>&gt;
+      &lt;<span class="tag">header</span>&gt;
+        &lt;<span class="tag">h1</span>&gt;Olá &lt;<span class="tag">span</span>&gt;Mundo!&lt;/<span class="tag">span</span>&gt;&lt;/<span class="tag">h1</span>&gt;
+        &lt;<span class="tag">nav</span>&gt;
+        &lt;/<span class="tag">nav</span>&gt;
+      &lt;/<span class="tag">header</span>&gt;
+      &lt;<span class="tag">main</span>&gt;
+        &lt;<span class="tag">section</span>&gt;
+          &lt;<span class="tag">h2</span>&gt;Outros&lt;/<span class="tag">h2</span>&gt;
+          &lt;<span class="tag">details</span>&gt;
+            &lt;<span class="tag">summary</span>&gt;Mais informações&lt;/<span class="tag">summary</span>&gt;
+            &lt;<span class="tag">p</span>&gt;Aqui estão mais informações.&lt;/<span class="tag">p</span>&gt;
+          &lt;/<span class="tag">details</span>&gt;
+          &lt;<span class="tag">br</span>&gt;
+        &lt;/<span class="tag">section</span>&gt;
+        &lt;<span class="tag">article</span>&gt;
+          &lt;<span class="tag">aside</span>&gt;
+          &lt;/<span class="tag">aside</span>&gt;
+        &lt;/<span class="tag">article</span>&gt;
+      &lt;/<span class="tag">main</span>&gt;
+      &lt;<span class="tag">footer</span>&gt;
+      &lt;/<span class="tag">footer</span>&gt;
+    &lt;/<span class="tag">div</span>&gt;
+  &lt;/<span class="tag">body</span>&gt;
+  &lt;/<span class="tag">html</span>&gt;
+  </code>
+</pre>
+      <small><a class=voltar href="#indice">Voltar</a></small>
+      <hr class="linha">
+      <div class="container">
+      <h2 id="conclusao">Conclusão</h2>
+      <p>
+        A jornada pelo mundo do HTML e sua influência fundamental na Internet é
+        tanto fascinante quanto educativa. Desde a invenção da web por Tim
+        Berners-Lee até o desenvolvimento de padrões modernos como o HTML5, esta
+        linguagem de marcação tem sido a espinha dorsal da criação de conteúdo
+        digital acessível e interativo. A compreensão de como o HTML estrutura e
+        apresenta o conteúdo na web não apenas enriquece nosso conhecimento
+        tecnológico, mas também nos capacita a contribuir ativamente para este
+        vasto universo digital.
+      </p>
+      <p>
+        As tags HTML, que começamos estudando como simples marcadores de texto,
+        revelam-se ferramentas poderosas para criar experiências ricas na web.
+        Elas são essenciais para a acessibilidade, otimização de motores de busca,
+        e para fornecer uma experiência de usuário coesa em diversos dispositivos
+        e navegadores. A habilidade em utilizar eficazmente estas tags e
+        compreender sua função semântica é crucial para qualquer desenvolvedor
+        web, designer ou criador de conteúdo aspirante.
+      </p>
+      <p>
+        Em conclusão, enquanto a Internet continua a evoluir e expandir suas
+        capacidades, também o faz o HTML, adaptando-se e inovando para atender às
+        demandas de uma paisagem digital em constante mudança. Ao dominar o HTML,
+        abrimos portas para inúmeras possibilidades criativas e profissionais,
+        solidificando nossa habilidade de moldar o futuro da comunicação e
+        interação online.
+      </p>
+      <small><a class=voltar href="#indice">Voltar</a></small>
+      </div>
+    </div>
+  </body>
+</html>

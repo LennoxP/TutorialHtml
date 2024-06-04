@@ -1,0 +1,57 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .menu ul {
+    background-color: #0a0a0b;
+    color: #ffffff;
+}
+
+body.dark-mode .menu ul li a {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .menu ul li a:hover {
+    color: #333;
+    background-color: #ffffff;
+}
+
+body.dark-mode h3, body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .caixa {
+    background-color: #1e1e1e;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+body.dark-mode .segundobody {
+    background-color: #0a0a0b;
+    color: #ffffff;
+}
+
+body.dark-mode .marca h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .voltar {
+    color: #add8e6;
+    background: #1e1e1e;
+}
+
+.dark-mode .voltar:hover {
+    transition: background-color 0.3s, color 0.3s;
+    background: #fafafa;
+    color: black;
+}
+
+body.dark-mode .listaindice a {
+    color: #add8e6;
+}
+
+body.dark-mode #indice {
+    color: #ffffff;
+}

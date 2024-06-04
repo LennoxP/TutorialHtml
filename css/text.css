@@ -1,0 +1,109 @@
+h3, h2 {
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.principal {
+    text-align: center;
+    padding: 40px;
+}
+
+.marca {
+    font-size: 30px;
+    display: inline-block;
+    font-family: Josefin Sans;
+    margin-right: 230px;
+}
+
+.marca h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+.voltar {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:#3E77B6;
+    background: #add8e6;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+small {
+    margin-left: 1150px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+small a:hover {
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s; 
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linha {
+    background: black;
+    width: 1000px;
+}
+
+body.dark-mode .linha {
+    background: #ffffff;
+}
+
+.listaindice {
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+.listaindice a{
+    color:#3E77B6;
+}
+
+.subtitulos {
+    padding: 20px;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+#indice {
+    color: black;
+}
+
+.button {
+    background: linear-gradient(to right, #f0f2f5 50%, #121212 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.lista1 {
+    padding-bottom: 15px;
+}
+
