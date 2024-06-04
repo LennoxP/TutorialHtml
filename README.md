@@ -7,7 +7,6 @@ Um pequeno site criado para ensinar e ajudar algumas pessoas que pretende começ
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Começando](#começando)
   - [Pré-requisitos](#pré-requisitos)
-  - [Instalação](#instalação)
 
 - [Agradecimentos](#agradecimentos)
 
